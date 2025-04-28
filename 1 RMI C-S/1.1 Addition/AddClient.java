@@ -3,8 +3,7 @@ import java.util.Scanner;
 
 public class AddClient{
     public static void main(String[] args){
-        try{
-            Scanner sc = new Scanner(System.in);
+        try(Scanner sc = new Scanner(System.in)){
             System.out.println("Enter First Number: ");
             double num1 = sc.nextDouble();
             System.out.println("Enter second number: ");

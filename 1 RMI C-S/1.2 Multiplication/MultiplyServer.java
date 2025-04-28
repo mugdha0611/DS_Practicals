@@ -8,7 +8,7 @@ public class MultiplyServer {
             MultiplyServerImpl multiplication = new MultiplyServerImpl();
 
             // Create RMI registry
-            LocateRegistry.createRegistry(1099);
+            LocateRegistry.createRegistry(2000);
 
             // Bind the remote object to the registry
             Naming.rebind("rmi://localhost/MultiplicationService", multiplication);
